@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Intel</title>
+  <!-- 设置 viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- 兼容国产浏览器的高速模式 -->
+  <meta name="renderer" content="webkit">
+  <!-- 引入 Bootstrap 的 CSS 文件 -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- 引入swiper.css文件 -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <!-- index.css -->
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <!--
+      html5shiv.js 文件的作用
+      * 用于可以让 IE 8 浏览器兼容 HTML5 提供的新元素
+      respond.js 文件的作用
+      * 用于可以让 IE 8 浏览器兼容 CSS3 提供的媒体查询
+   -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+  <style type="text/css" media="screen">
+  </style>
+</head>
+<body>
+<!-- navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" id="navbar" role="navigation">
+      <div class="row">
+          <!-- icon-bar -->
+          <div class="navbar-left col-xs-5 col-sm-5"  id="icon-bar">
+
+            <button class="navbar-btn nav hidden-md hidden-lg">
+              <span class="menu-icon"></span>
+            </button>
+
+            <ul class="header-ul hidden-xs hidden-sm">
+                <li><button class="navbar-btn btn product-btn" name="product" data-toggle='modal' data-target='#modal-menu'>产品</button></li>
+                <li><button class="navbar-btn btn develop-btn" name="develop" data-toggle='modal' data-target='#modal-menu'>学习与开发</button></li>
+                <li><button class="navbar-btn btn support-btn" name="support" data-toggle='modal' data-target='#modal-menu'>产品支持</button></li>
+            </ul>
+
+          </div>
+
+            <!-- Intel-logo -->
+            <div class="navbar-center col-xs-2 col-md-2 center-block" id="brand-logo">
+              <div class="content-logo"><a href="#" class="navbar-logo"> </a></div>
+            </div>
+
+            <!-- other button -->
+            <div class="col-xs-5 col-md-5 navbar-right">
+              <div class="other-button">
+
+                <button class="navbar-btn language-btn">
+                  <span class="hidden-xs language-text">China(简体中文)</span>
+                  <span class="language-icon"></span>
+                </button>
+
+                <button class="navbar-btn login-btn" >
+                  <span class="hidden-xs login-text">登录</span>
+                  <span class="login-icon"></span>
+                </button>
+
+                <button class="navbar-btn search-btn" ><span class="search-icon"></span></button>
+
+              </div>
+          </div>
+        </div>
+    </div>
+  <!-- modal-menu-left -->
+  <div class="modal left modal-menu-left" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" id="modal-menu">
+    <div class="modal-dialog modal-menu-dialog" aria-hidden="true">
+      <div class="modal-content modal-menu-content">
+        <div class="modal-header modal-menu-header">
+        <button type="button" class="icon navbar-btn pull-right" data-dismiss='modal' aria-label='关闭' tabindex="0"><span></span></button>
+        <ul class="nav nav-tabs modal-menu-navTabs">
+            <li><a href="#menu-left-0" data-toggle='tab'>产品</a></li>
+            <li><a href="#menu-left-1" data-toggle='tab'>学习与开发</a></li>
+            <li><a href="#menu-left-2" data-toggle='tab'>产品支持</a></li>
+        </ul>
+        </div>
+        <div class="modal-body modal-menu-body">
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="menu-left-0">
+              <ul class="list-unstyled modal-menu-control-list">
+                  <li>设备和系统<span class="icon-caret"></span></li>
+                  <li>处理器<span class="icon-caret"></span></li>
+                  <li>主板和套件<span class="icon-caret"></span></li>
+                  <li>芯片组<span class="icon-caret"></span></li>
+                  <li>固态盘<span class="icon-caret"></span></li>
+                  <li>服务器产品<span class="icon-caret"></span></li>
+                  <li>网络和通信<span class="icon-caret"></span></li>
+                  <li>无线<span class="icon-caret"></span></li>
+                  <li>软件和服务<span class="icon-caret"></span></li>
+                  <li>英特尔网关<span class="icon-caret"></span></li>
+                  <li>FPGA<span class="icon-caret"></span></li>
+                  <li>技术<span class="icon-caret"></span></li>
+                  <li>购买<span class="icon-caret"></span></li>
+              </ul>
+            </div>
+            <div class="tab-pane fade in" id="menu-left-1">
+              <ul class="list-unstyled modal-menu-control-list">
+                  <li>在家中<span class="icon-caret"></span></li>
+                  <li>企业和IT<span class="icon-caret"></span></li>
+                  <li>开发人员和创客<span class="icon-caret"></span></li>
+                  <li>合作伙伴<span class="icon-caret"></span></li>
+                  <li>教育工作者<span class="icon-caret"></span></li>
+                  <li>新闻与活动<span class="icon-caret"></span></li>
+              </ul>
+            </div>
+            <div class="tab-pane fade in" id="menu-left-2">
+              <ul class="list-unstyled modal-menu-control-list">
+                  <li>产品支持<span class="icon-caret"></span></li>
+                  <li>下载和驱动程序<span class="icon-caret"></span></li>
+                  <li>保修<span class="icon-caret"></span></li>
+                  <li>英特尔投资<span class="icon-caret"></span></li>
+                  <li>企业责任<span class="icon-caret"></span></li>
+                  <li>联系支持人员<span class="icon-caret"></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal-selector-language -->
+  <div class="col-xs-12">
+    <div class="modal right modal-selector-right" tabindex="-1" role='dialog' aria-labelledby='myModalLabel'
+    aria-hidden='false' id="modal-selector-language">
+      <div class="modal-dialog modal-selector-dialog-language" aria-hidden='true'>
+        <div class="modal-content modal-selector-content-language">
+
+          <div class="modal-header modal-selector-header-language">
+            <h2 class="modal-title">选择您的地区</h2>
+          </div>
+
+          <div class="modal-body modal-selector-body-language">
+            <div class="panel flyout-control-panel">
+                <ul class="list-unstyled" id="language-accordion">
+
+                    <div class="lang-selector panel-heading">
+                        <h4 class="accordion-toggle" data-toggle="collapse" data-parent="#language-accordion" data-target="#home-redirects">
+                        <span></span>
+                        转至您国家/地区的主页</h4>
+                    </div>
+
+                    <div id="home-redirects" aria-expanded="ture" class="panel-collapse collapse accordion-panel in" >
+                            <li><a href="#">Asia Pacific<span class="icon-caret"></span></a></li>
+                            <li><a href="#">Europe<span class="icon-caret"></span></a></li>
+                            <li><a href="#">Latin America<span class="icon-caret"></span></a></li>
+                            <li><a href="#">Middle East/Africa<span class="icon-caret"></span></a></li>
+                            <li><a href="#">North America<span class="icon-caret"></span></a></li>
+                    </div>
+
+                </ul>
+            </div>
+          </div>
+
+          <div class="modal-footer modal-selector-footer-language" id="close-button">
+            <button type="button" class="close icon" data-dismiss="modal" aria-label="Close">
+                <span></span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal-selector-signin -->
+  <div class="col-xs-12">
+    <div class="modal right modal-selector-right" tabindex="-1" role='dialog' aria-labelledby='myModalLabel' aria-hidden='false' id="modal-selector-signin">
+      <div class="modal-dialog modal-selector-dialog-signin" aria-hidden='true'>
+        <div class="modal-content modal-selector-content-signin">
+          <div class="modal-header modal-selector-header-signin">
+          <h4 class="modal-title">登录</h4>
+          <a class="close" data-dismiss='modal'>
+              x
+          </a>
+          </div>
+          <div class="modal-body modal-selector-body-signin">
+            <div class="container-fliud">
+              <div class="cos-xs-12">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-xs-12 col-sm-12 " for="signin-username">
+                        用户名:
+                        </label>
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <input class="form-control" id="signin-username" name="signin-username" placeholder="username" type="username">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="signin-password" class="col-xs-12">
+                        密码：
+                      </label>
+                      <div class="col-xs-12">
+                        <input type="password" id="signin-password" name="signin-password" placeholder="password" class="form-control">
+                      </div>
+                    </div>
+                    <input type="submit" class="btn btn-success" >
+                  </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- major body -->
+    <!-- homepageTakeover 01-5G-->
+    <div class="homepageTakeover">
+        <div id="homepageTakeover-1">
+            <div class="intrinsic-element">
+
+
+            </div>
+            <div class="blade-item-wrapper">
+              <div class="blade-item">
+                        <h2 class="headline-font">高度可信的基础设施平台</h2>
+                        <p>英特尔® 至强® 可扩展处理器是高度可信赖的基础设施平台，专为实现世界一流的平台灵活性和持续性而打造。可靠性、可用性和可维护性 (RAS) 方面的显著增强能够支持最高级的任务关键型工作负载。</p>
+                        <p><a href="#" class="btn btn-primary" onclick="return false">强化基础设施</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- section ui-bar -->
+  <section class="ui-bar">
+    <div class="container">
+        <ul class="list-inline">
+            <li>
+                <a href="#" onclick="return false" class="support icon">
+                    <figure></figure>
+                    <span>支持</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="return false" class="download icon">
+                    <figure></figure>
+                    <span>下载中心</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="return false" class="specs icon">
+                    <figure></figure>
+                    <span>产品规格</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="return false" class="shop icon">
+                    <figure></figure>
+                    <span>了解产品</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="return false" class="compare icon">
+                    <figure></figure>
+                    <span>处理器比较</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+  </section>
+
+    <!-- homepageTakeover 02-beyond expectation-->
+    <div class="homepageTakeover">
+        <div id="homepageTakeover-2">
+            <div class="overview-component">
+              <div class="blade-item-super">
+                <div class="blade-item-content">
+                    <div class="blade-item-content-wrapper">
+                        <h2 class="headline-font">海量任务处理的巅峰</h2>
+                        <p>无论是创造最优秀的作品，还是畅享身临其境的游戏直播，英特尔® 酷睿™ X-SERIES 处理器都能为你轻松处理最苛刻的工作和任务。</p>
+                        <p><a href="#" class="btn btn-primary" onclick="return false">释放能量，就在今天</a></p>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+   <!-- homepageTakeover 03-->
+    <div class="homepageTakeover">
+        <div id="homepageTakeover-3">
+            <div class="overview-component-1">
+              <div class="blade-item-super">
+                <div class="blade-item-content">
+                    <div class="blade-item-content-wrapper">
+                        <p><a href="#" class="btn btn-primary" onclick="return false">即刻了解详情</a></p>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+       <!-- homepageTakeover 04-->
+    <div class="homepageTakeover">
+        <div id="homepageTakeover-3">
+            <div class="overview-component-2">
+              <div class="blade-item-super">
+                <div class="blade-item-content">
+                    <div class="blade-item-content-wrapper">
+                        <h2 class="headline-font">未来的交通工具</h2>
+                        <p><a href="#" class="btn btn-primary" onclick="return false">了解更多</a></p>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+       <!-- homepageTakeover 05-->
+    <div class="homepageTakeover">
+        <div id="homepageTakeover-4">
+            <div class="overview-component-3">
+              <div class="blade-item-super">
+                <div class="blade-item-content">
+                    <div class="blade-item-content-wrapper">
+                        <h2 class="headline-font">物联网的发展</h2>
+                        <p>我们正在改进企业与技术和技术之间的互联方式</p>
+                        <p><a href="#" class="btn btn-primary" onclick="return false">了解英特尔如何加速网络转型</a></p>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- swiper-homepageGallery-section -->
+    <div class="homepageGallery-section">
+      <div class="blade-title row">
+        <div class="col-xs-12 col-md-12">
+          <h2 class="headline-font">寻找您新的设备</h2>
+          <p>立即购买搭载英特尔® 酷睿™ 处理器并配备 Windows® 10 的新设备。</p>
+        </div>
+      </div>
+       <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide" style="margin-right: 80px;">
+                <div class="type-image-subtitle">
+                  <div class="blade-image">
+                    <img src="img/2-in-1-4x3.png.rendition.intel.web.336.252.png" alt="二合一电脑">
+                  </div>
+                  <p>二合一电脑</p>
+                </div>
+
+              </div>
+              <div class="swiper-slide" >
+                <div class="type-image-subtitle">
+                  <div class="blade-image">
+                    <img src="img/all-in-one-4x3.png.rendition.intel.web.336.252.png" alt="一体机">
+                </div>
+                <p>一体机</p>
+                </div>
+              </div>
+              <div class="swiper-slide" >
+                <div class="type-image-subtitle">
+                  <div class="blade-image">
+                    <img src="img/laptop-4x3.png.rendition.intel.web.336.252.png" alt="笔记本电脑">
+                </div>
+                <p>笔记本电脑</p>
+                </div>
+              </div>
+              <div class="swiper-slide" >
+                <div class="type-image-subtitle">
+                  <div class="blade-image">
+                    <img src="img/tablet-4x3.png.rendition.intel.web.336.252.png" alt="平板电脑">
+                </div>
+                <p>平板电脑</p>
+                </div>
+              </div>
+              <div class="swiper-slide" >
+                <div class="type-image-subtitle">
+                  <div class="blade-image">
+                    <img src="img/desktop-4x3.png.rendition.intel.web.336.252.png" alt="台式机">
+                </div>
+                <p>台式机</p>
+                </div>
+              </div>
+
+          </div>
+          <div class="swiper-button-prev owl-prev"></div>
+          <div class="swiper-button-next owl-next"></div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+
+
+    <!-- footer -->
+    <footer class="global blade solid">
+      <div class="component-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="logo-container hidden-xs hidden-sm">
+                <span class="footer-logo"></span>
+              </div>
+              <div class="content clearfix">
+                <ul class="footer-links links-ul list-unstyled">
+                    <li>公司信息</li>
+                    <li>英特尔投资</li>
+                    <li>企业责任</li>
+                    <li>投资者关系</li>
+                    <li>联系我们</li>
+                    <li>新闻发布室</li>
+                    <li>网站地图</li>
+                    <li>招贤纳士</li>
+                </ul>
+                <ul class="footer-links social">
+                    <li><a href="#" class="footer-links-icon linkedin"></a></li>
+                    <li><a href="#" class="footer-links-icon sina"></a></li>
+                    <li><a href="#" class="footer-links-icon sina"></a></li>
+                    <li><a href="#" class="footer-links-icon sina"></a></li>
+                </ul>
+                <ul class="footer-links list-unstyled secondary-links">
+                    <li>® 英特尔公司</li>
+                    <li><a href="#">京 ICP 备 14036123 号-2</a></li>
+                    <li><a href="#">使用条款</a></li>
+                    <li><a href="#">*商标</a></li>
+                    <li><a href="#">隐私条款</a></li>
+                    <li><a href="#">Cookie</a></li>
+                </ul>
+              </div>
+              <div class="clearfix footer-logo-X visible-xs visible-sm">
+              <ul class="footer-links social">
+                <li><span class="footer-logo-mobile visible-xs visible-sm"></span></li>
+              </ul>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.transit.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/index.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
